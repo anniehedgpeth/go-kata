@@ -2,14 +2,20 @@
 
 # Getting Started
 
+## Setup
+
 * Set up Go.
 * Create directory `$GOPATH/src/github.com/anniehedgpeth`
 * Run `git clone https://github.com/anniehedgpeth/go-kata.git`
 
-Every time you start the kata
+## Every time you start the kata
+
+* Close slack and email
+* Set a timer for 30 minutes
 * Create a new branch `20190104-annie`
 * Check into that branch
 * Never merge to master
+* When the timer goes off, quit
 
 # Kata
 
@@ -47,6 +53,21 @@ func main() {
 
 # Intermediate
 
-1. Create a `webserver` package, that when calling `http://localhost/sayHi` it returns the results of the `SayHi` method in the `greeting` package
-2. Change your `main` package to call the webserver instead of the method directly
-3. Create a `http://localhost/familyMembers` endpoint that returns back your family members, deserialized as `person` structs, and output them
+_Listing the topic each step covers to facilitate easy learning/lookup._
+
+1. Remove method calls from `main()` method
+2. (REST Server) Create a `webserver` package, that when calling `http://localhost/sayHi` it returns the results of the `SayHi` method in the `greeting` package
+2. (API Client) Change your `main` package to call the api endpoint instead of the method directly. Output the results
+3. Create an endpoint for `sayFavoriteColorsOfFamily` and call it from `main`
+4. Create an endpoint for `sayBirthdaysOfFamily` and call it from `main`
+5. Create an endpoint for `sayAllowanceOfFamily` and call it from `main`
+6. (JSON Serialization) Create a `http://localhost/familyMembers` endpoint that returns back your family members, deserialized as `person` structs, and output them
+7. (PUT API calls) Create an endpoint at `http://localhost/you` where a `PUT` allows you to change the name in memory every time you call `sayHi`. Note that the name is different.
+8. (Errors) If someone sets the name to be blank, `setName` method should return an error and you should return an error HTTP response code
+9. (Templates) Create an html endpoint at `http://localhost/report` that returns back an HTML formatted list of all family members
+10. (Methods) Create `isRich()` method on `person` that will return true if their allowance is greater than `10.50`.
+11. (Anonymous functions) create `familyMembers(where func(person member) bool)` method to filter family members
+12. (Anonymous functions) create `http://localhost/richFamilyMembers` endpoint to output family members that are rich to HTML
+13. (Interfaces) Create `pet` struct with the name of the pet and its favorite toy.
+14. (Interfaces) Create `http://localhost/animals` endpoint which outputs all family members and pets in the family by their name, using an `animal` interface.
+15. (Channels) Modify the `richFamilyMembers` filter to process whether each family member is rich concurrently.
