@@ -31,6 +31,8 @@ Maggie, birthday 1-April, favorite color white, allowance 6.50
 
 ## Basics
 
+This gets you through most of the basic elements of golang.
+
 _After every step run the program and see the result_
 1. Create a program in the `main` package (and folder) that outputs `Hello, World!`
 2. (Variables) Extract `World` into a local variable `name`
@@ -63,7 +65,7 @@ func main() {
 
 # Intermediate
 
-_Listing the topic each step covers to facilitate easy learning/lookup._
+This extends what you learned above to learn how to create a webserver API and client in golang.
 
 1. Remove method calls from `main()` method
 2. (REST Server) Create a `webserver` package, that when calling `http://localhost/sayHi` it returns the results of the `SayHi` method in the `greeting` package
