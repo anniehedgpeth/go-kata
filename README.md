@@ -34,6 +34,7 @@ Maggie, birthday 1-April, favorite color white, allowance 6.50
 This gets you through most of the basic elements of golang.
 
 _After every step run the program and see the result_
+
 1. Create a program in the `main` package (and folder) that outputs `Hello, World!`
 2. (Variables) Extract `World` into a local variable `name`
 3. (Variables) Change the name to your name. It should now say, for example `Hello, Annie!`
