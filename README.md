@@ -25,11 +25,14 @@ Graduate to [Go Land](https://www.jetbrains.com/go/) and use the [refactorings](
 Use this background information for the kata.
 
 Simpson family:
-Homer, birthday 22-September, favorite color blue, allowance 10.50
-Marge, birthday 14-February, favorite color red, allowance 20.34
-Lisa, birthday 4-July, favorite color purple, allowance 15.50
-Bart, birthday 1-June, favorite color black, allowance 5.50
-Maggie, birthday 1-April, favorite color white, allowance 6.50
+---------------
+| name | birthday | favorite color | allowance |
+|---|---|---|---|
+| Homer| 22-September | 10.50 |
+| Marge | 14-February | red | 20.34 |
+| Lisa | 4-July | purple | 15.50 |
+| Bart | 1-June | black | 5.50 |
+| Maggie | 1-April | white | 6.50 |
 
 # Kata
 
