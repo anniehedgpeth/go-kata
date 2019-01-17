@@ -28,7 +28,7 @@ Simpson family:
 ---------------
 | name | birthday | favorite color | allowance |
 |---|---|---|---|
-| Homer| 22-September | 10.50 |
+| Homer| 22-September | blue | 10.50 |
 | Marge | 14-February | red | 20.34 |
 | Lisa | 4-July | purple | 15.50 |
 | Bart | 1-June | black | 5.50 |
