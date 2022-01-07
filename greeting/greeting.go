@@ -9,9 +9,9 @@ func PrintDivider() {
 }
 
 func SayHi(name string) {
+	PrintDivider()
 	fmt.Printf("\nHello, %s!\n", name)
 	IsOwner(name)
-	PrintDivider()
 }
 
 func IsOwner(name string) bool {
@@ -22,23 +22,15 @@ func IsOwner(name string) bool {
 	return false
 }
 
-func SayAllowances(allowances map[string]float32) {
-	for m, a := range allowances {
-		fmt.Printf("%v: %.02f\n", m, a)
-	}
-	PrintDivider()
+func SayAllowances(allowance float32) {
+	fmt.Printf("allowance: %.02f\n", allowance)
 }
 
-func SayBirthdays(birthdays map[string]int) {
-	for d, b := range birthdays {
-		fmt.Printf("%v: %d\n", d, b)
-	}
-	PrintDivider()
+func SayBirthdays(birthday int) {
+	fmt.Printf("birthday: %d\n", birthday)
 }
 
-func FavColor(simpsons map[string]string) {
-	for n, s := range simpsons {
-		fmt.Printf("%v: %v\n", n, s)
-	}
+func FavColor(color string) {
+	fmt.Printf("color: %v\n", color)
 	PrintDivider()
 }
